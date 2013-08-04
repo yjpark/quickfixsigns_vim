@@ -227,7 +227,7 @@ function! s:GenRel(num) "{{{3
     " echom "DBG ". s:relmax
     if a:num > s:relmax && a:num < 100
         for n in range(s:relmax + 1, a:num)
-            exec 'sign define QFS_REL_'. n .' text='. n .' texthl=LineNr'
+            exec 'sign define QFS_REL_'. n .' text='. n .' texthl=Question'
         endfor
         let s:relmax = a:num
     endif
